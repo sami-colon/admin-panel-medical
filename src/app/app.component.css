@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.panel {
+  height: 705px;
+}
+
+.side-panel {
+  background-color: blue;
+}
+
+.main-panel {
+  background-color: orange;
+}
+
+.nav-panel {
+  background-color: green;
+}
+
+.vertical-scroll {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
