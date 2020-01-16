@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main-body {
+  background-color: #464d7b;
+  border-radius: 20px;
+  margin: 10px;
+  box-shadow: 0 0 20px black;
+  height: 655px;
+}
+
+.btn-sp {
+  height: 40px;
+  outline: 0;
+  padding: 2px;
+  margin: 2px;
+  border: 1px solid floralwhite;
+  border-radius: 10px;
+  background-color: #463d7d;
+  opacity: 0.85;
+  transition: 0.5s ease-in-out;
+}
+
+.btn-sp:hover{
+  cursor: pointer;
+  opacity: 1;
+  background-color: #464d7b;
+  font-size: 1.2rem;
+}
+

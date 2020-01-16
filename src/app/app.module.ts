@@ -6,12 +6,15 @@ import { SidePanelComponent } from './side-panel/side-panel.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { MainPanelComponent } from './main-panel/main-panel.component';
 
+import {DayOfWeek} from './dayofweek.pipe';
+
 @NgModule({
   declarations: [
     AppComponent,
     SidePanelComponent,
     NavigationComponent,
-    MainPanelComponent
+    MainPanelComponent,
+    DayOfWeek,
   ],
   imports: [
     BrowserModule

@@ -8,18 +8,24 @@
 }
 
 .side-panel {
-  background-color: blue;
+  /*background-color: #3B4450;*/
 }
 
 .main-panel {
-  background-color: orange;
+  /*background-color: #3B4450;*/
 }
 
 .nav-panel {
-  background-color: green;
+  /*background-color: #3B4450;*/
 }
 
 .vertical-scroll {
   overflow-x: hidden;
   overflow-y: auto;
+}
+
+.main-body{
+  /*background: linear-gradient(to left , black , #36404B);*/
+  background: linear-gradient(to left , #1e2542, #464d7b);
+
 }
