@@ -5,8 +5,10 @@ import { AppComponent } from './app.component';
 import { SidePanelComponent } from './side-panel/side-panel.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { MainPanelComponent } from './main-panel/main-panel.component';
+import {BasicService} from './basic.service';
 
 import {DayOfWeek} from './dayofweek.pipe';
+import { NewSchemeComponent } from './new-scheme/new-scheme.component';
 
 @NgModule({
   declarations: [
@@ -15,11 +17,12 @@ import {DayOfWeek} from './dayofweek.pipe';
     NavigationComponent,
     MainPanelComponent,
     DayOfWeek,
+    NewSchemeComponent,
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [BasicService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
