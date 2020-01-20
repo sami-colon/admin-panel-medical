@@ -4,3 +4,12 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.graph-component{
+  display: block;
+  background: transparent;
+  width: 80%;
+  box-shadow: 0 0 8px 3px floralwhite;
+  border: 1px solid floralwhite;
+}
+
+

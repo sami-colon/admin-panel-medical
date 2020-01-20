@@ -5,7 +5,17 @@
 <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 <!--  required libraries-->
 
-
-<div>
-
+<div class="row mt-5">
+  <div class="graph-component col-10 ml-auto mr-auto">
+    <canvas
+      baseChart
+      [chartType]="'line'"
+      [datasets]="chartData"
+      [labels]="chartLabels"
+      [options]="chartOptions"
+      [legend]="true"
+    >
+    </canvas>
+  </div>
 </div>
+

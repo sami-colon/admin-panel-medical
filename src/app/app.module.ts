@@ -6,6 +6,7 @@ import { SidePanelComponent } from './side-panel/side-panel.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { MainPanelComponent } from './main-panel/main-panel.component';
 import {BasicService} from './basic.service';
+import {ChartsModule} from 'ng2-charts';
 
 import {DayOfWeek} from './dayofweek.pipe';
 import { NewSchemeComponent } from './new-scheme/new-scheme.component';
@@ -24,7 +25,8 @@ import { GraphComponent } from './graph/graph.component';
     GraphComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ChartsModule
   ],
   providers: [BasicService],
   bootstrap: [AppComponent]
