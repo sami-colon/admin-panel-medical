@@ -4,7 +4,8 @@
 }
 
 .panel {
-  height: 705px;
+  height: 1000px;
+  overflow: hidden;
 }
 
 .side-panel {

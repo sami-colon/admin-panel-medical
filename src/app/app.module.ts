@@ -9,6 +9,8 @@ import {BasicService} from './basic.service';
 
 import {DayOfWeek} from './dayofweek.pipe';
 import { NewSchemeComponent } from './new-scheme/new-scheme.component';
+import { ThoughtComponent } from './thought/thought.component';
+import { GraphComponent } from './graph/graph.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { NewSchemeComponent } from './new-scheme/new-scheme.component';
     MainPanelComponent,
     DayOfWeek,
     NewSchemeComponent,
+    ThoughtComponent,
+    GraphComponent,
   ],
   imports: [
     BrowserModule
