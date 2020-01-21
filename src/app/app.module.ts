@@ -12,6 +12,7 @@ import {DayOfWeek} from './dayofweek.pipe';
 import { NewSchemeComponent } from './new-scheme/new-scheme.component';
 import { ThoughtComponent } from './thought/thought.component';
 import { GraphComponent } from './graph/graph.component';
+import { UpdateSchemeComponent } from './update-scheme/update-scheme.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { GraphComponent } from './graph/graph.component';
     NewSchemeComponent,
     ThoughtComponent,
     GraphComponent,
+    UpdateSchemeComponent,
   ],
   imports: [
     BrowserModule,
