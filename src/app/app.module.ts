@@ -13,6 +13,42 @@ import { NewSchemeComponent } from './new-scheme/new-scheme.component';
 import { ThoughtComponent } from './thought/thought.component';
 import { GraphComponent } from './graph/graph.component';
 import { UpdateSchemeComponent } from './update-scheme/update-scheme.component';
+import { AddEventsComponent } from './add-events/add-events.component';
+import { HelpingHandComponent } from './helping-hand/helping-hand.component';
+import { NotificationComponent } from './notification/notification.component';
+
+import {Routes, RouterModule} from '@angular/router';
+
+const routes: Routes = [
+  {
+    path: 'home',
+    component: MainPanelComponent
+  },
+  {
+    path: 'update-scheme',
+    component: UpdateSchemeComponent
+  },
+  {
+    path: 'add-events',
+    component: AddEventsComponent
+  },
+  {
+    path: 'helping-hand',
+    component: HelpingHandComponent
+  },
+  {
+    path: 'notifications',
+    component: NotificationComponent
+  },
+  { path: '',
+    redirectTo: '/home',
+    pathMatch: 'full'
+  },
+  { path: '**', component: MainPanelComponent }
+];
+
+
+
 
 @NgModule({
   declarations: [
@@ -25,10 +61,17 @@ import { UpdateSchemeComponent } from './update-scheme/update-scheme.component';
     ThoughtComponent,
     GraphComponent,
     UpdateSchemeComponent,
+    AddEventsComponent,
+    HelpingHandComponent,
+    NotificationComponent,
   ],
   imports: [
     BrowserModule,
-    ChartsModule
+    ChartsModule,
+    RouterModule.forRoot(
+      routes,
+      { enableTracing: true }
+    )
   ],
   providers: [BasicService],
   bootstrap: [AppComponent]
