@@ -7,5 +7,50 @@
 
 
 <div class="body-main-panel">
-  <p class="text-white text-center">Update Scheme</p>
+  <h2 class="text-center text-white mt-3">Update Scheme</h2>
+  <div class="row">
+    <div class="col-10 ml-auto mr-auto">
+      <input class="inp-sp mt-3 text-center text-white"
+             placeholder="Search Scheme"
+             [(ngModel)]="schemeSearch"
+      ><br>
+    </div>
+  </div>
+  <form #form="ngForm" (ngSubmit)="onSubmit(form)" validate>
+    <div class="row mt-5 ml-5">
+      <div class="col-3">
+        <h5 class="text-white text-center title-sp">Title:</h5>
+      </div>
+      <div class="col-8">
+        <input name="Title" ngModel required #titleModel="ngModel" class="inp-sp-1 text-white text-center" placeholder="{{title}}">
+      </div>
+      <div class="col-3">
+        <h5 class="text-white text-center title-sp">Description:</h5>
+      </div>
+      <div class="col-8">
+        <input name="Description" ngModel required #descModel="ngModel" class="inp-sp-1 text-white text-center" placeholder="{{description}}">
+      </div>
+      <div class="col-3">
+        <h5 class="text-white text-center title-sp">Age:</h5>
+      </div>
+      <div class="col-8 mr-auto">
+        <input name="Age" ngModel required #ageModel="ngModel" class="inp-sp-1 text-white text-center" placeholder="{{age}}">
+      </div>
+      <div class="col-3">
+        <h5 class="text-white text-center title-sp">Card Type:</h5>
+      </div>
+      <div class="col-8 mr-auto">
+        <input name="Card Type" ngModel required #cardTypeModel="ngModel" class="inp-sp-1 text-white text-center" placeholder="{{cardType}}">
+      </div>
+      <div class="col-3">
+        <h5 class="text-white text-center title-sp">Region:</h5>
+      </div>
+      <div class="col-8 mr-auto">
+        <input name="Card Type" ngModel required #regionModel="ngModel" class="inp-sp-1 text-white text-center" placeholder="{{region}}">
+      </div>
+      <div class="col-8 ml-0">
+        <button class="btn-sp-update">Edit</button>
+      </div>
+    </div>
+  </form>
 </div>

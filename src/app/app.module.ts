@@ -18,6 +18,7 @@ import { HelpingHandComponent } from './helping-hand/helping-hand.component';
 import { NotificationComponent } from './notification/notification.component';
 
 import {Routes, RouterModule} from '@angular/router';
+import {FormsModule} from '@angular/forms';
 
 const routes: Routes = [
   {
@@ -70,8 +71,9 @@ const routes: Routes = [
     ChartsModule,
     RouterModule.forRoot(
       routes,
-      { enableTracing: true }
-    )
+      {enableTracing: true}
+    ),
+    FormsModule
   ],
   providers: [BasicService],
   bootstrap: [AppComponent]
