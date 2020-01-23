@@ -7,5 +7,55 @@
 
 
 <div class="body-main-panel">
-  <p class="text-white text-center">Update Scheme</p>
+  <h1 class="text-white text-center mt-3">Add Event</h1>
+  <form #form="ngForm" (ngSubmit)="onSubmit(nameModel, descModel, addressModel, ageModel, cardTypeModel, docsRequirementsModel, eventDateModel)" novalidate>
+    <div class="row mt-5 ml-5">
+      <div class="col-3">
+        <h5 class="text-white text-center title-sp">Event Name:</h5>
+      </div>
+      <div class="col-8">
+        <input name="Title" ngModel required #nameModel="ngModel" class="inp-sp-1 text-white text-center" placeholder="{{eventName}}">
+      </div>
+      <div class="col-3">
+        <h5 class="text-white text-center title-sp">Description:</h5>
+      </div>
+      <div class="col-8">
+        <input name="Description" ngModel required #descModel="ngModel" class="inp-sp-1 text-white text-center" placeholder="{{eventDescription}}">
+      </div>
+      <div class="col-3">
+        <h5 class="text-white text-center title-sp">Address:</h5>
+      </div>
+      <div class="col-8">
+        <input name="Description" ngModel required #addressModel="ngModel" class="inp-sp-1 text-white text-center" placeholder="{{eventAddress}}">
+      </div>
+      <div class="col-3">
+        <h5 class="text-white text-center title-sp">Age Group:</h5>
+      </div>
+      <div class="col-8">
+        <input name="Description" ngModel required #ageModel="ngModel" class="inp-sp-1 text-white text-center" placeholder="{{age}}">
+      </div>
+      <div class="col-3">
+        <h5 class="text-white text-center title-sp">Card Type:</h5>
+      </div>
+      <div class="col-8">
+        <input name="Description" ngModel required #cardTypeModel="ngModel" class="inp-sp-1 text-white text-center" placeholder="{{cardType}}">
+      </div>
+      <div class="col-3">
+        <h5 class="text-white text-center title-sp">Documents Required:</h5>
+      </div>
+      <div class="col-8">
+        <input name="Description" ngModel required #docsRequirementsModel="ngModel" class="inp-sp-1 text-white text-center" placeholder="{{documentsRequired}}">
+      </div>
+      <div class="col-3">
+        <h5 class="text-white text-center title-sp">Event Date:</h5>
+      </div>
+      <div class="col-8">
+        <input name="Description" ngModel required #eventDateModel="ngModel" class="inp-sp-1 text-white text-center" placeholder="{{eventDate}}"
+        type="date">
+      </div>
+      <div class="col-8 ml-0">
+        <button class="btn-sp-update">Add Events</button>
+      </div>
+    </div>
+  </form>
 </div>
