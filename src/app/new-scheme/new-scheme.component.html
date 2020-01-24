@@ -7,5 +7,59 @@
 
 
 <div class="body-main-panel">
-  <p class="text-white text-center">Update Scheme</p>
+  <form #form="ngForm" (ngSubmit)="onSubmit(form)" validate>
+    <div class="row mt-5 ml-5">
+      <div class="col-3">
+        <h5 class="text-white text-center title-sp">Scheme Name:</h5>
+      </div>
+      <div class="col-8">
+        <input name="Name" ngModel required #nameModel="ngModel" class="inp-sp-1 text-white text-center" placeholder="{{scheme.name}}">
+      </div>
+      <div class="col-3">
+        <h5 class="text-white text-center title-sp">Scheme Type:</h5>
+      </div>
+      <div class="col-8">
+        <input name="Type" ngModel required #typeModel="ngModel" class="inp-sp-1 text-white text-center" placeholder="{{scheme.type}}">
+      </div>
+      <div class="col-3">
+        <h5 class="text-white text-center title-sp">Starting Date:</h5>
+      </div>
+      <div class="col-8 mr-auto">
+        <input name="Date" ngModel required #dateModel="ngModel" class="inp-sp-1 text-white text-center" placeholder="{{scheme.date}}" type="date">
+      </div>
+      <div class="col-3">
+        <h5 class="text-white text-center title-sp">Scheme Description:</h5>
+      </div>
+      <div class="col-8 mr-auto">
+        <input name="Description" ngModel required #descriptionModel="ngModel" class="inp-sp-1 text-white text-center" placeholder="{{scheme.description}}">
+      </div>
+      <div class="col-3">
+        <h5 class="text-white text-center title-sp">Age Group:</h5>
+      </div>
+      <div class="col-8 mr-auto">
+        <input name="Card Type" ngModel required #ageGroupModel="ngModel" class="inp-sp-1 text-white text-center" placeholder="{{scheme.ageGroup}}">
+      </div>
+      <div class="col-3">
+        <h5 class="text-white text-center title-sp">State:</h5>
+      </div>
+      <div class="col-8 mr-auto">
+        <input name="Card Type" ngModel required #stateModel="ngModel" class="inp-sp-1 text-white text-center" placeholder="{{scheme.state}}">
+      </div>
+      <div class="col-3">
+        <h5 class="text-white text-center title-sp">Scheme Features:</h5>
+      </div>
+      <div class="col-8 mr-auto">
+        <input name="Card Type" ngModel required #featuresModel="ngModel" class="inp-sp-1 text-white text-center" placeholder="{{scheme.features}}">
+      </div>
+      <div class="col-3">
+        <h5 class="text-white text-center title-sp">Helpful Links:</h5>
+      </div>
+      <div class="col-8 mr-auto">
+        <input name="Card Type" ngModel required #linksModel="ngModel" class="inp-sp-1 text-white text-center" placeholder="{{scheme.link}}">
+      </div>
+      <div class="col-8 ml-0">
+        <button class="btn-sp-update">Edit</button>
+      </div>
+    </div>
+  </form>
 </div>

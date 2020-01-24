@@ -19,3 +19,66 @@
     box-shadow: 0px 0px 20px 15px rebeccapurple;
   }
 }
+
+.inp-sp{
+  border-radius: 12px;
+  outline: 0;
+  box-shadow: none;
+  border: 1px solid floralwhite;
+  height: 35px;
+  width: 30%;
+  background-color: transparent;
+  opacity: 0.75;
+  transition: 0.5s ease-in-out;
+}
+
+.inp-sp:focus{
+  width: 100%;
+  opacity: 1;
+}
+
+.inp-sp:hover{
+  cursor: text;
+  opacity: 1;
+  width: 100%;
+}
+
+.inp-sp-1{
+  margin: 20px 0 0 0;
+  border-radius: 12px;
+  border: 1px solid floralwhite;
+  height: 35px;
+  width: 100%;
+  background-color: transparent;
+}
+
+.inp-sp-1:focus{
+  border: 1px solid floralwhite;
+  outline: 0;
+}
+
+.btn-sp-update{
+  background-color: transparent;
+  border: 1px solid lightskyblue;
+  border-radius: 5px;
+  width: 80px;
+  height: 30px;
+  color: floralwhite;
+  opacity: 0.85;
+  margin-top: 20px;
+}
+
+.btn-sp-update:hover{
+  cursor: pointer;
+  opacity: 1;
+  background-color: #64D19C;
+}
+
+.btn-sp-update:active{
+  border: 1px solid mediumspringgreen;
+  opacity: 1;
+}
+
+.title-sp{
+  margin: 20px 0 0 0;
+}

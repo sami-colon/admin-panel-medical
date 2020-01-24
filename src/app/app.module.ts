@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule} from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { SidePanelComponent } from './side-panel/side-panel.component';
@@ -16,7 +17,6 @@ import { UpdateSchemeComponent } from './update-scheme/update-scheme.component';
 import { AddEventsComponent } from './add-events/add-events.component';
 import { HelpingHandComponent } from './helping-hand/helping-hand.component';
 import { NotificationComponent } from './notification/notification.component';
-
 import {Routes, RouterModule} from '@angular/router';
 import {FormsModule} from '@angular/forms';
 
@@ -28,6 +28,10 @@ const routes: Routes = [
   {
     path: 'update-scheme',
     component: UpdateSchemeComponent
+  },
+  {
+    path: 'new-scheme',
+    component: NewSchemeComponent
   },
   {
     path: 'add-events',
@@ -73,7 +77,8 @@ const routes: Routes = [
       routes,
       {enableTracing: true}
     ),
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [BasicService],
   bootstrap: [AppComponent]

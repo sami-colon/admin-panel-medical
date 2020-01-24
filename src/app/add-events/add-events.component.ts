@@ -20,6 +20,7 @@ export class AddEventsComponent implements OnInit {
 
   onSubmit(form): string {
     console.log(this.eventName, this.eventDescription, this.eventDate, this.eventAddress, this.age, this.documentsRequired);
+    alert('Event Added');
     return '';
   }
 }
