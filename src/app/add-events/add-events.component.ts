@@ -8,20 +8,18 @@ import { Component, OnInit } from '@angular/core';
 export class AddEventsComponent implements OnInit {
 
   constructor() { }
-  eventName = 'event Name';
+  eventName = '';
   eventDate = '';
-  eventAddress = 'Address';
-  eventDescription = 'Description';
-  age = '1-100';
-  cardType = 'Everyone';
-  documentsRequired = 'Documents';
+  eventAddress = '';
+  eventDescription = '';
+  age = '';
+  cardType = '';
+  documentsRequired = '';
   ngOnInit() {
   }
 
-  onSubmit(nameModel, descModel, addressModel, ageModel, cardTypeModel, docsRequirementsModel, eventDateModel): string {
-    // nameModel, descModel, addressModel, ageModel, cardTypeModel, docsRequirementsModel, eventDateModel
-    // tslint:disable-next-line:max-line-length
-    console.log(nameModel.value, descModel.value, addressModel.value, ageModel.value, cardTypeModel.value, docsRequirementsModel.value, eventDateModel.value);
+  onSubmit(form): string {
+    console.log(this.eventName, this.eventDescription, this.eventDate, this.eventAddress, this.age, this.documentsRequired);
     return '';
   }
 }
